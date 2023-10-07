@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+@import "./partials/pages/_homepage";
+@import "./partials/pages/_menuspage";
