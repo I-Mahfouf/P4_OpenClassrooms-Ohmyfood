@@ -1,0 +1,54 @@
+@import "../tools/_variables";
+@import "../tools/_mixins";
+
+//* Header - Page d'accueil *//
+//* Header - Homepage *//
+
+.header-homepage {
+    @include col-dir;
+    @include center-flex (center, normal);
+
+    &__title {
+        @include headline-font;
+        width: 100%;
+        text-align: center;
+        padding: 14px 89px 14px 89px;
+    }
+}
+
+.locations-bar {
+    width: 100%;
+    height: 50px;
+    gap: 17px;
+    color: $background-footer;
+    background-color: $background-locationbar;
+    @include center-flex (center, center);
+    @include row-dir;
+    @include shadow-logo;
+
+    &__cities {
+        font-weight: $bold;
+    }
+}
+
+
+//* Header - Page des menus *//
+//* Header - Menus page *//
+
+.header-menus {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 14px;
+
+    &__title {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        @include headline-font;
+    }
+}
+
+.arrow-link {
+    width: 100%;
+}

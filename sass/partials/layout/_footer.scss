@@ -1,0 +1,55 @@
+@import "../tools/_variables";
+@import "../tools/_mixins";
+
+//* Footer *//
+
+.footer {
+    padding: 22px 25px;
+    @include col-dir;
+    color: $white;
+    background-color: $background-footer;
+
+    //* La largeur d'écran dépasse 768px *//
+    @include respond-to($small-screen) {
+        gap: 20px;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    &__title {
+        @include headline-font;
+        padding-bottom: 16px;
+
+        //* La largeur d'écran dépasse 768px *//
+        @include respond-to($small-screen) {
+            padding: 0;
+        }
+    }
+
+    &__content {
+        @include col-dir;
+        gap: 7px;
+    
+        //* La largeur d'écran dépasse 768px *//
+        @include respond-to($small-screen) {
+            @include row-dir;
+            align-items: center;
+        }
+    }
+}
+
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+}
+
+.duo-logo {
+    display: flex;
+    gap: 11px;
+
+    //* La largeur d'écran dépasse 768px *//
+    @include respond-to($small-screen) {
+        margin-right: 10px;
+    }
+}
