@@ -1,0 +1,65 @@
+@import "../tools/_variables";
+
+//* Display *//
+
+@mixin col-dir {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin row-dir {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin center-flex ($align-items: center, $justify-content: center) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+
+//* Police de caractères des titres et du logo *//
+//* Titles and logo font *//
+
+@mixin headline-font {
+    font-family: 'Shrikhand', cursive;
+    font-weight: $regular;
+}
+
+
+//* Les ombres *//
+//* Shadows *//
+
+@mixin shadow-logo {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+@mixin shadow-btn {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+@mixin shadow-cards {
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+//* Ligne en dessous des titres de la page menu *//
+//* Text decoration in menu page *//
+
+@mixin text-greendecoration {
+    text-decoration: underline;
+    text-decoration-color: $green-background;
+    text-underline-offset: 9px;
+    text-decoration-thickness: 3px;
+}
+
+
+//* Adaptation du site et utilisation des medias queries *//
+//* Responsive design *//
+
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+      @content;
+  }
+}
