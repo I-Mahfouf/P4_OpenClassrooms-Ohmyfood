@@ -1,0 +1,13 @@
+@import "../tools/_variables";
+@import "../tools/_mixins";
+
+.new-pin {
+    position: absolute;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 5px 10px;
+    right: 15px;
+    top: 15px;
+    background-color: $green-background;
+    color: $pin-color;
+}

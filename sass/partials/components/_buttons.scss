@@ -1,0 +1,44 @@
+@import "../tools/_variables";
+@import "../tools/_mixins";
+
+
+//* Bouton - Explorer/Commander *//
+// Button - Explore/Order *//
+
+.btn {
+    @include center-flex;
+    @include shadow-btn;
+    opacity: 1;
+    text-decoration: none;
+    height: 50px;
+    color: $white;
+    font-weight: $bold;
+    border-radius: 25px;
+    background: linear-gradient(to top, $primary-color, $secondary-color);
+    transition: opacity, transform, 0.4s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+}
+
+//* Bouton "Explorer" - Page d'accueil *//
+//* Button "Explore" - Homepage *//
+
+.btn-explore {
+    width: 218px;
+    padding: 13px 19px 13px 19px;
+    margin-top: 27px;
+    margin-bottom: 57px;
+}
+
+
+//* Bouton "Commander" - Page des menus *//
+//* Button "Order" - Menus page *//
+
+.btn-order {
+    width: 186px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
