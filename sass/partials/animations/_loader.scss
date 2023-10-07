@@ -1,0 +1,59 @@
+@import "../tools/_variables";
+@import "../tools/_mixins";
+
+//* Chargement de la page *//
+//* Loading page *//
+
+.loader-container {
+    width: 100%;
+    height: 100%;
+    @include center-flex (center, center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: $white;
+    animation: hideLoader 3s forwards;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    border-bottom-color: $primary-color;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hideLoader {
+    0% {
+        opacity: 1;
+        width: 100%;
+    }
+
+    80% {
+        opacity: 1; 
+        width: 100%;
+    }
+
+    99% {
+        opacity: 0;
+        width: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0;
+    }
+}
