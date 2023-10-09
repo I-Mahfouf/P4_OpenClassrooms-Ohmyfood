@@ -54,7 +54,7 @@
     gap: 20px;
 
     //* La largeur d'écran dépasse 768px *//
-    @include respond-to($small-screen) {
+    @include respond-to($medium-screen) {
         padding-left: 180px;
         padding-right: 180px;
     }

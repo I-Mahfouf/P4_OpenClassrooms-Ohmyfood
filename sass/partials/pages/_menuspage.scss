@@ -115,7 +115,6 @@
     padding: 0;
     background-color: $white;
     border-radius: 15px;
-    overflow: hidden;
     cursor: pointer;
 
     &:hover {
@@ -130,49 +129,52 @@
         width: 100%;
         gap: 2%;
         padding: 2%;
+    }
+
+    &__description {
+        width: 100%;
+        padding-left: 5px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
+        
+    &__title {
+        margin: 0;
+        font-size: 16px;
+        width: 295px;
+    }
 
-    &__description {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 100%;
-        padding-left: 5px;
-
-
-        &__title {
-            margin: 0;
-            font-size: 16px;
-        }
-
-        &__subtitle {
-            margin: 0;
-            font-size: 15px;
-        }
+    &__subtitle {
+        margin: 0;
+        font-size: 15px;
+        width: 360px;
     }
 
     &__price {
         display: flex;
         align-items: flex-end;
-        width: 15%;
+        width: 18%;
         padding: 5px;
         font-weight: $bold;
         transition: transform 0.3s ease;
+
+        //* La largeur d'écran dépasse 768px *//
+        @include respond-to ($medium-screen) {
+            width: 10%;
+        }
     }
 
     &__check {
         position: absolute;
-        right: -12px;
+        right: -2px;
         @include center-flex(center, center);
         height: 100%;
         width: 15%;
         color: $white;
         background-color: $green-background;
         border-radius: 0 15px 15px 0;
-        transform: translateX(100%);
+        transform: translateX(5%);
         opacity: 0;
         transition: opacity 0.3s, transform 0.3s;
     }
@@ -184,6 +186,10 @@
     
     &:hover .cards-dishes__price {
         transform: translateX(-35px); 
-    }
 
+        //* La largeur d'écran dépasse 768px *//
+        @include respond-to ($medium-screen) {
+            transform: translateX(-65px); 
+        }
+    }
 }
