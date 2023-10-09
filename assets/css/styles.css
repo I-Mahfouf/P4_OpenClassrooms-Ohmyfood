@@ -413,11 +413,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  opacity: 0; /**/
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   color: transparent;
@@ -929,11 +925,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  opacity: 0; /**/
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   color: transparent;
@@ -1183,17 +1175,15 @@
   color: white;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
   opacity: 0;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s; /**/
 }
 .cards-dishes:hover .cards-dishes__check {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(2%);
+          transform: translateX(2%);
   opacity: 1;
 }
 .cards-dishes:hover .cards-dishes__price {

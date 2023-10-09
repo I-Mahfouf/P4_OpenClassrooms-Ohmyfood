@@ -174,16 +174,17 @@
         color: $white;
         background-color: $green-background;
         border-radius: 0 15px 15px 0;
-        transform: translateX(5%);
         opacity: 0;
-        transition: opacity 0.3s, transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s; /**/
     }
     
     &:hover .cards-dishes__check {
-        transform: translateX(0);
+        transform: translateX(2%);
         opacity: 1;
     }
     
+    //* Prix/Price *//
+
     &:hover .cards-dishes__price {
         transform: translateX(-35px); 
 
