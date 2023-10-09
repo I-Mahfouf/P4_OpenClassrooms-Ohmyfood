@@ -420,7 +420,7 @@
   background-clip: text;
   -webkit-background-clip: text;
 }
-.fullheart:active {
+.fullheart:hover {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -932,7 +932,7 @@
   background-clip: text;
   -webkit-background-clip: text;
 }
-.fullheart:active {
+.fullheart:hover {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
