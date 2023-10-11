@@ -1131,12 +1131,16 @@
 .cards-dishes__title {
   margin: 0;
   font-size: 16px;
-  width: 295px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .cards-dishes__subtitle {
   margin: 0;
   font-size: 15px;
-  width: 360px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .cards-dishes__price {
   display: -webkit-box;
